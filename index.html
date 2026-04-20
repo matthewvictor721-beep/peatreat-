@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <script src="script.js" defer></script>
+      <meta charset="utf-8"/>  
+       <title>PeaTreat</title>
+       <link href="./styles.css" rel="stylesheet">
+    </head>
+   
+    <body>    
+  <header class="main-header">
+  <div class="logo-group">
+    <div class="logo-circle">🎂</div>
+    <div class="brand-info">
+      <h2 class="brand-name-text">PeaTreat </h2>
+      <p class="tagline">DELIGHT IN EVERY BITE</p>
+    </div>
+  </div>
+
+  <div class="est-tag">EST. 2026</div>
+</header>
+
+  <main class="hero-section">
+    <div class="hero-content-card">
+      <div class="badge">✦ HANDCRAFTED WITH LOVE ✦</div>
+      <h1>Welcome to <br><span class="brand-name">PeaTreat </span></h1>
+      <p class="sub-text">Custom bakes for every celebration</p>
+      <div class="hero-buttons">
+  <button class="tour-trigger-btn" onclick="startTour()">✨ Take a Tour</button>
+  <button class="order-now-btn" onclick="openOrder(null)">🎂 Order Now</button>
+</div>
+    </div> 
+  </main>
+  
+  <section class="features-bar" style="display:flex; flex-direction:row; justify-content:space-around; align-items:center; padding:50px 20px; background:linear-gradient(135deg, #d63384, #c44dff);">
+  <div class="feature-item" style="display:flex; flex-direction:column; align-items:center; gap:8px; width:30%;">
+    <span style="font-size:30px;">🎂</span>
+    <p style="font-size:9px; font-weight:700; letter-spacing:1px; margin:0; color:white; text-align:center;">CUSTOM CAKE DESIGNS</p>
+  </div>
+  <div class="feature-item" style="display:flex; flex-direction:column; align-items:center; gap:8px; width:30%;">
+    <span style="font-size:30px;">🚚</span>
+    <p style="font-size:9px; font-weight:700; letter-spacing:1px; margin:0; color:white; text-align:center;">FAST DELIVERY</p>
+  </div>
+  <div class="feature-item" style="display:flex; flex-direction:column; align-items:center; gap:8px; width:30%;">
+    <span style="font-size:30px;">💝</span>
+    <p style="font-size:9px; font-weight:700; letter-spacing:1px; margin:0; color:white; text-align:center;">MADE WITH LOVE</p>
+  </div>
+</section>
+<section class="creations-section">
+  <span class="section-label">✦ OUR WORK</span>
+  <h2>Sweet <span class="pink-italic">Creations</span></h2>
+  <p class="section-sub">Every bake is handcrafted with love and attention to detail.</p>
+
+  <div class="cake-cards">
+    <div class="cake-card featured">
+      <span class="featured-tag">Featured</span>
+      <img src="barbie.jpg" alt="Signature Barbie Cake" class="cake-photo" onclick="openPhoto(this)" >
+      <p>Signature Barbie Cake</p>
+    </div>
+
+    <div class="cake-grid">
+      <div class="cake-card">
+        <img src="download.jpg" alt="Make your dreams come alive" class="cake-photo" onclick="openPhoto(this)" >
+        <p>Floral Dreams</p>
+      </div>
+      <div class="cake-card">
+        <img src="birthday.jpg" alt="Floral Dreams" class="cake-photo" onclick="openPhoto(this)" >
+        <p>Butterfly Theme</p>
+      </div>
+      <div class="cake-card">
+     <img src="hey.jpg" alt="Floral Dreams" class="cake-photo" onclick="openPhoto(this)" >
+        <p>Birthday Special</p>
+      </div>
+      <div class="cake-card">
+        <img src="cake4.jpg"  alt="Floral Dreams" class="cake-photo" onclick="openPhoto(this)" >
+        <p>Wedding Tier</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <span class="section-label">✦ MEET THE BAKER</span>
+  <h2>About <span class="pink-italic">Pea</span></h2>
+  <p class="section-sub">The sweet soul behind every bake.</p>
+
+  <div class="baker-card">
+    <div class="baker-top">
+      <div class="baker-avatar">
+        <img src="pea.jpg" alt="Pea" class="baker-photo" onclick="openPhoto(this)" >
+      </div>
+      <div class="baker-info">
+        <h3>Pea</h3>
+        <p class="baker-title">FOUNDER · HEAD BAKER · EST. 2026</p>
+      </div>
+    </div>
+
+    <p class="baker-bio">Hi love! I'm Pea, a passionate baker who believes every celebration deserves a bake as special as the moment itself. 🎂</p>
+
+    <p class="baker-bio">From dreamy birthday tiers to elegant wedding cakes and doughs, I pour my heart into every design, every layer, and every bite. PeaTreat  was born out of love for art, sugar, and the smiles a beautiful cake brings.</p>
+
+    <div class="with-love">
+      <span>💝</span>
+      <p>WITH LOVE</p>
+    </div>
+  </div>
+</section>
+<section class="how-it-works">
+  <span class="section-label">✦ THE PROCESS</span>
+  <h2>How It <span class="pink-italic">Works</span></h2>
+  <p class="section-sub">Ordering your dream cake is easy as 1, 2, 3!</p>
+
+  <div class="steps-list">
+    <div class="how-step">
+      <div class="step-number">1</div>
+      <div class="step-icon">🎨</div>
+      <h3>Browse & Choose</h3>
+      <p>Explore our gallery of custom designs or build your own dream cake from scratch.</p>
+    </div>
+
+    <div class="step-arrow">↓</div>
+
+    <div class="how-step">
+      <div class="step-number">2</div>
+      <div class="step-icon">📋</div>
+      <h3>Place Your Order</h3>
+      <p>Fill in your details, flavour, tiers, theme and delivery info. We'll confirm shortly!</p>
+    </div>
+
+    <div class="step-arrow">↓</div>
+
+    <div class="how-step">
+      <div class="step-number">3</div>
+      <div class="step-icon">🎉</div>
+      <h3>Receive & Celebrate</h3>
+      <p>Your fresh, beautiful cake gets delivered straight to your door. Time to celebrate!</p>
+    </div>
+  </div>
+
+  <button class="how-cta" onclick="startTour()">
+    Start Your Order ✨
+  </button>
+</section>
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">🎂</div>
+      <div>
+        <h3>PeaTreat  </h3>
+        <p>Delight In Every Bite</p>
+      </div>
+    </div>
+    <p class="footer-desc">Custom cakes and sweet treats for every celebration. Made with love, delivered with joy.</p>
+  </div>
+
+  <div class="footer-links">
+    <h4>Quick Links</h4>
+    <ul>
+      <li onclick="scrollToTop()">🏠 Home</li>
+      <li onclick="document.querySelector('.creations-section').scrollIntoView({behavior:'smooth'})">🎂 Our Work</li>
+      <li onclick="document.querySelector('.about-section').scrollIntoView({behavior:'smooth'})">👩‍🍳 About Pea</li>
+      <li onclick="openOrder(null)">📦 Place Order</li>
+    </ul>
+  </div>
+
+  <div class="footer-contact">
+    <h4>Contact Us</h4>
+    <p>📞 +234 808 434 0513</p>
+    <p>📍 Nigeria</p>
+    <p>⏰ Mon - Sat, 8am - 7pm</p>
+  </div>
+
+  <div class="footer-socials">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="https://api.whatsapp.com/send?phone=2348084340513" target="_blank" class="social-btn whatsapp">
+        <span>💬</span> WhatsApp
+      </a>
+      <a href="https://www.instagram.com/peazy_cake_nd_pastries" target="_blank" class="social-btn instagram">
+        <span>📸</span> Instagram
+      </a>
+      <a href="https://www.tiktok.com/@PeaTreat" target="_blank" class="social-btn tiktok">
+        <span>🎵</span> TikTok
+      </a>
+      <a href="https://www.facebook.com/EmrynMatthew" target="_blank" class="social-btn facebook">
+        <span>👍</span> Facebook
+      </a>
+      
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 PeaTreat  . All rights reserved.</p>
+    <p>Made with 💝 by Pea</p>
+  </div>
+</footer>
+     
+    <div id="tourModal" class="modal">
+    <div class="modal-content">
+    <div class="close-bar" onclick="closeTour()"></div>
+     <h2>Your Sweet Tour 🎀</h2>    
+    <div class="tour-list">
+        <div class="tour-item" onclick="openGallery()">
+          <span class="icon">🎨</span>
+          <div><h3>Browse Designs</h3><p>Explore our gallery of custom designs.</p></div>
+        </div>
+        <div class="tour-item" onclick="openCustomize()">
+          <span class="icon">✏️</span>
+          <div><h3>Customize Your Cake</h3><p>Choose flavors, tiers, and themes.</p></div>
+        </div>
+        <div class="tour-item" onclick="openOrder(null)">
+          <span class="icon">📦</span>
+          <div><h3>Place Your Order</h3><p>Easy checkout with delivery options.</p></div>
+        </div>
+    <button class="start-btn" onclick="closeTour()">Let's Get Started 🍰</button>
+   </div>
+      </div>
+    </div>
+   
+    <div class="chat-container">
+  <div class="chat-bubble">
+    <span class="bot-label">🟢 Pea · Online</span>
+    <p>Hi there! I'm <b>Pea</b>, your cake guide. Tap me to take a sweet tour! 🎂</p>
+  </div>
+  <div class="bot-face pulse">🤖</div>
+</div>
+<a href="https://www.instagram.com/peazy_cake_nd_pastries" 
+target="_blank" class="instagram-float">
+  📸
+</a>
+<div id="lightbox" onclick="closeLightbox()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:99999; justify-content:center; align-items:center;">
+    <img id="lightbox-img" style="max-width:95%; max-height:90%; border-radius:15px; transition:transform 0.3s ease;">
+</div>
+
+<div id="galleryModal" class="modal">
+  <div class="modal-content">
+    <div class="close-bar" onclick="closeGallery()"></div>
+    <span class="section-label">✦ BROWSE DESIGNS</span>
+    <h2>Pick Your <span class="pink-italic">Fave</span></h2>
+
+    <!-- Category Tabs -->
+    <div class="category-tabs">
+      <button class="cat-tab active" onclick="switchCategory('cakes', this)">🎂 Cakes</button>
+      <button class="cat-tab" onclick="switchCategory('donuts', this)">🍩 Donuts</button>
+      <button class="cat-tab" onclick="switchCategory('meatpie', this)">🥧 Meat Pie</button>
+      <button class="cat-tab" onclick="switchCategory('chinchin', this)">🍟 Chin Chin</button>
+      <button class="cat-tab" onclick="switchCategory('sausages', this)">🌭 Sausages</button>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="gallery-grid" id="galleryGrid"></div>
+
+    <!-- Order This Button (hidden until photo selected) -->
+    <div class="order-this-bar" id="orderThisBar" style="display:none;">
+      <p id="selectedItemName">Signature Barbie Cake</p>
+      <button class="order-this-btn" onclick="proceedToOrder()">Order This 🎀</button>
+    </div>
+  </div>
+</div>
+
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <div class="close-bar" onclick="closeOrder()"></div>
+    <span class="section-label">✦ PLACE AN ORDER</span>
+    <h2>Let's Bake <span class="pink-italic">Yours</span></h2>
+    <p class="order-sub">Fill in the details and Pea will get back to you shortly! 🎂</p>
+
+    <div class="order-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="e.g. Victor" id="customerName">
+        </div>
+        <div class="form-group">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" placeholder="08XXXXXXXXX" id="customerPhone">
+        </div>
+      </div>
+
+      <div class="form-group full">
+        <label>Selected Item</label>
+        <input type="text" id="selectedItemField" editable 
+        style="background:#fff0f6; color:#ff4d8d; font-weight:700;">
+      </div>
+
+      <!-- Cake fields (shown for cakes only) -->
+      <div id="cakeFields">
+        <div class="form-group full">
+          <label>Flavour</label>
+          <div class="flavour-options">
+            <button class="flavour-btn" onclick="selectFlavour(this)">🍫 Chocolate</button>
+            <button class="flavour-btn" onclick="selectFlavour(this)">🍓 Strawberry</button>
+            <button class="flavour-btn" onclick="selectFlavour(this)">🍦 Vanilla</button>
+            <button class="flavour-btn" onclick="selectFlavour(this)">🍪 Cookies & Cream</button>
+            <button class="flavour-btn" onclick="selectFlavour(this)">🎉 Funfetti</button>
+            <button class="flavour-btn" onclick="selectFlavour(this)">❤️ Red velvet</button>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Number of Tiers</label>
+            <select id="tiers">
+              <option>1 Tier</option>
+              <option>2 Tiers</option>
+              <option>3 Tiers</option>
+              <option>4+ Tiers</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Event Date</label>
+            <input type="date" id="eventDate">
+          </div>
+        </div>
+      </div>
+
+      <!-- Snack fields (shown for snacks only) -->
+      <div id="snackFields" style="display:none;">
+        <div class="form-group full">
+          <label>Quantity / Amount</label>
+          <input type="text" placeholder="e.g. 10 pieces, 2 packs..." id="quantity">
+        </div>
+        <div class="form-group full">
+          <label>Delivery Date</label>
+          <input type="date" id="snackDate">
+        </div>
+      </div>
+
+      <div class="form-group full">
+        <label>Special Requests</label>
+        <textarea id="specialRequests" 
+        placeholder="Describe your dream cake — colours, theme, inscriptions, characters..."></textarea>
+      </div>
+      <div class="form-group full">
+  <label>Delivery Location</label>
+  <input type="text" id="deliveryLocation" 
+  placeholder="e.g. 12 Broad Street, Lagos">
+</div>
+
+<div class="form-group full">
+  <label>Preferred Delivery Time</label>
+  <select id="deliveryTime">
+    <option value="">Select time...</option>
+    <option>🌅 Morning (8am - 12pm)</option>
+    <option>☀️ Afternoon (12pm - 4pm)</option>
+    <option>🌆 Evening (4pm - 7pm)</option>
+  </select>
+</div>
+
+<div class="form-group full">
+  <label>How did you hear about us?</label>
+  <select id="hearAboutUs">
+    <option value="">Select...</option>
+    <option>📸 Instagram</option>
+    <option>👥 Referral / Friend</option>
+    <option>🔍 Google</option>
+    <option>📱 WhatsApp</option>
+    <option>🎉 Event / Exhibition</option>
+    <option>🌐 Other</option>
+  </select>
+</div>
+
+      <button class="send-order-btn" onclick="sendOrder()">
+        Send My Order 🎀
+      </button>
+    </div>
+  </div>
+</div>
+<div id="customizeModal" class="modal">
+  <div class="modal-content">
+    <div class="close-bar" onclick="closeCustomize()"></div>
+    <span class="section-label">✦ CUSTOMIZE YOUR CAKE</span>
+    <h2>Build Your <span class="pink-italic">Dream</span></h2>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <p class="step-counter" id="stepCounter">Step 1 of 9</p>
+
+    <!-- Steps Container -->
+    <div class="steps-container">
+
+      <!-- Step 1: Theme -->
+      <div class="step active" id="step1">
+        <h3>🎨 Choose a Theme</h3>
+        <div class="option-grid">
+          <button class="option-btn" onclick="selectOption(this, 'theme')">👸 Princess</button>
+          <button class="option-btn" onclick="selectOption(this, 'theme')">🦋 Butterfly</button>
+          <button class="option-btn" onclick="selectOption(this, 'theme')">🌸 Floral</button>
+          <button class="option-btn" onclick="selectOption(this, 'theme')">🎮 Gaming</button>
+          <button class="option-btn" onclick="selectOption(this, 'theme')">💍 Wedding</button>
+          <button class="option-btn" onclick="selectOption(this, 'theme')">🎂 Birthday</button>
+          <button class="option-btn" onclick="selectOption(this, 'theme')">🦸 Superhero</button>
+          <button class="option-btn" onclick="selectOption(this, 'theme')">✨ Custom</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Flavour -->
+      <div class="step" id="step2">
+        <h3>🍫 Choose a Flavour</h3>
+        <div class="option-grid">
+          <button class="option-btn" onclick="selectOption(this, 'flavour')">🍫 Chocolate</button>
+          <button class="option-btn" onclick="selectOption(this, 'flavour')">🍓 Strawberry</button>
+          <button class="option-btn" onclick="selectOption(this, 'flavour')">🍦 Vanilla</button>
+          <button class="option-btn" onclick="selectOption(this, 'flavour')">🍪 Cookies & Cream</button>
+          <button class="option-btn" onclick="selectOption(this, 'flavour')">🎉 Funfetti</button>
+          <button class="option-btn" onclick="selectOption(this, 'flavour')">❤️ Red velvet</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Tiers -->
+      <div class="step" id="step3">
+        <h3>🎂 Number of Tiers</h3>
+        <div class="option-grid">
+          <button class="option-btn" onclick="selectOption(this, 'tiers')">1 Tier</button>
+          <button class="option-btn" onclick="selectOption(this, 'tiers')">2 Tiers</button>
+          <button class="option-btn" onclick="selectOption(this, 'tiers')">3 Tiers</button>
+          <button class="option-btn" onclick="selectOption(this, 'tiers')">4+ Tiers</button>
+        </div>
+      </div>
+      
+      <!-- Step 4: Mode of Decoration -->
+<div class="step" id="step4">
+  <h3>🎨 Mode of Decoration</h3>
+  <div class="option-grid">
+    <button class="option-btn" onclick="selectOption(this, 'decoration')">🍫 Fondant</button>
+    <button class="option-btn" onclick="selectOption(this, 'decoration')">🍦 Whipped Cream</button>
+    <button class="option-btn" onclick="selectOption(this, 'decoration')">🧈 Butter Cream</button>
+  </div>
+</div>     
+
+      <!-- Step 5: Colour Scheme -->
+      <div class="step" id="step5">
+        <h3>🎨 Colour Scheme</h3>
+        <div class="option-grid">
+          <button class="option-btn" onclick="selectOption(this, 'colour')">🩷 Pink</button>
+          <button class="option-btn" onclick="selectOption(this, 'colour')">🤍 White</button>
+          <button class="option-btn" onclick="selectOption(this, 'colour')">💜 Purple</button>
+          <button class="option-btn" onclick="selectOption(this, 'colour')">💙 Blue</button>
+          <button class="option-btn" onclick="selectOption(this, 'colour')">🖤 Black</button>
+          <button class="option-btn" onclick="selectOption(this, 'colour')">❤️ Red</button>
+          <button class="option-btn" onclick="selectOption(this, 'colour')">💛 Yellow</button>
+          <button class="option-btn" onclick="selectOption(this, 'colour')">🌈 Mixed</button>
+        </div>
+      </div>
+
+      <!-- Step 6: Candles -->
+      <div class="step" id="step6">
+        <h3>🕯️ Candles</h3>
+        <div class="option-grid">
+          <button class="option-btn" onclick="selectOption(this, 'candles')">No Candles</button>
+          <button class="option-btn" onclick="selectOption(this, 'candles')">1 - 5</button>
+          <button class="option-btn" onclick="selectOption(this, 'candles')">6 - 10</button>
+          <button class="option-btn" onclick="selectOption(this, 'candles')">10+</button>
+        </div>
+      </div>
+
+      <!-- Step 7: Personal Message -->
+      <div class="step" id="step7">
+        <h3>💬 Personal Message</h3>
+        <p class="step-sub">What should be written on the cake?</p>
+        <div class="form-group full">
+          <textarea id="cakeMessage" placeholder="e.g. Happy Birthday Victor! 🎉"></textarea>
+        </div>
+      </div>
+      
+<!-- Step 8: Reference Photo -->
+<div class="step" id="step8">
+  <h3>📸 Reference Photo</h3>
+  <p class="step-sub">Upload a photo of a cake you love for reference!</p>
+  
+  <div class="upload-area" onclick="document.getElementById('photoUpload').click()">
+    <input type="file" id="photoUpload" accept="image/*" 
+    style="display:none" onchange="previewPhoto(this)">
+    <div id="uploadPlaceholder">
+      <span style="font-size:40px;">📷</span>
+      <p>Tap to upload photo</p>
+      <p style="font-size:11px; color:#aaa;">Optional — skip if you don't have one</p>
+    </div>
+    <img id="photoPreview" style="display:none; width:100%; 
+    border-radius:15px; max-height:200px; object-fit:cover;">
+  </div>
+
+  <button class="option-btn" id="skipPhoto" 
+  onclick="skipPhotoStep()" 
+  style="width:100%; margin-top:15px; text-align:center;">
+    ⏭️ Skip this step
+  </button>
+</div>
+
+
+      <!-- Step 9: Your Details -->
+      <div class="step" id="step9">
+  <h3>📋 Your Details</h3>
+  <div class="form-group full">
+    <label>Your Name</label>
+    <input type="text" id="customName" placeholder="e.g. Victor">
+  </div>
+  <div class="form-group full">
+    <label>Phone / WhatsApp</label>
+    <input type="tel" id="customPhone" placeholder="08XXXXXXXXX">
+  </div>
+  <div class="form-group full">
+    <label>Event Date</label>
+    <input type="date" id="customDate">
+  </div>
+  <div class="form-group full">
+    <label>Delivery Location</label>
+    <input type="text" id="customLocation" 
+    placeholder="e.g. 12 Broad Street, Lagos">
+  </div>
+  <div class="form-group full">
+    <label>Preferred Delivery Time</label>
+    <select id="customDeliveryTime">
+      <option value="">Select time...</option>
+      <option>🌅 Morning (8am - 12pm)</option>
+      <option>☀️ Afternoon (12pm - 4pm)</option>
+      <option>🌆 Evening (4pm - 7pm)</option>
+    </select>
+  </div>
+</div>
+
+    <!-- Navigation Buttons -->
+    <div class="step-nav">
+      <button class="nav-btn back-btn" id="backBtn" 
+      onclick="prevStep()" style="display:none;">← Back</button>
+      <button class="nav-btn next-btn" id="nextBtn" 
+      onclick="nextStep()">Next →</button>
+    </div>
+
+  </div>
+</div>
+</body>
+
